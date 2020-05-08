@@ -54,7 +54,7 @@ public class interfaz extends javax.swing.JFrame {
         textRes.setEditable(false);
         textRes.setBackground(new java.awt.Color(0, 0, 0));
         textRes.setColumns(20);
-        textRes.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        textRes.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
         textRes.setForeground(new java.awt.Color(255, 255, 255));
         textRes.setRows(5);
         textRes.setCaretColor(new java.awt.Color(255, 102, 0));
@@ -84,11 +84,12 @@ public class interfaz extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(labelPass, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)
-                    .addComponent(btnEn)
-                    .addComponent(btnDes, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel1)
+                        .addComponent(btnEn)
+                        .addComponent(btnDes, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 0, 0)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(5, 5, 5)

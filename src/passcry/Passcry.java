@@ -13,14 +13,29 @@ public class Passcry {
         
         gui.btnEn.addActionListener(new ActionListener(){  
             public void actionPerformed(ActionEvent e){ 
+                
+               char[] pass=gui.labelPass.getPassword();
+               String password="";
                
-                gui.textRes.setText(crypto.Set_MD5(gui.TextReq.getText(),gui.labelPass.toString()));
+               for(char x : pass){
+                   password+=x;
+               }
+             
+               gui.textRes.setText(crypto.Set_MD5(gui.TextReq.getText(),password));
             }  
         });
          
         gui.btnDes.addActionListener(new ActionListener(){  
-            public void actionPerformed(ActionEvent e){  
-                gui.textRes.setText(crypto.Get_MD5(gui.TextReq.getText(),gui.labelPass.toString()));
+            public void actionPerformed(ActionEvent e){ 
+                
+               char[] pass=gui.labelPass.getPassword();
+               String password="";
+          
+               for(char x : pass){
+                   password+=x;
+               }
+               
+               gui.textRes.setText(crypto.Get_MD5(gui.TextReq.getText(),password));
             }  
         }); 
         
