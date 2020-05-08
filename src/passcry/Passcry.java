@@ -14,13 +14,13 @@ public class Passcry {
         gui.btnEn.addActionListener(new ActionListener(){  
             public void actionPerformed(ActionEvent e){ 
                
-                gui.textRes.setText(crypto.Set_MD5(gui.TextReq.getText(),gui.labelPass.getText()));
+                gui.textRes.setText(crypto.Set_MD5(gui.TextReq.getText(),gui.labelPass.toString()));
             }  
         });
          
         gui.btnDes.addActionListener(new ActionListener(){  
             public void actionPerformed(ActionEvent e){  
-                gui.textRes.setText(crypto.Get_MD5(gui.TextReq.getText(),gui.labelPass.getText()));
+                gui.textRes.setText(crypto.Get_MD5(gui.TextReq.getText(),gui.labelPass.toString()));
             }  
         }); 
         
